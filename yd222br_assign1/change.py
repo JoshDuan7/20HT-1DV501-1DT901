@@ -1,0 +1,28 @@
+price=float(input("Price:"))
+payment=float(input("Payment:"))
+change=round(payment-price)
+print("Change: ",change)
+
+return1000kr=int(change//1000)
+return500kr=int(change//500)
+return200kr=int((change-500*return500kr)//200)
+return100kr=int((change-500*return500kr-200*return200kr)//100)
+return50kr=int((change-500*return500kr-200*return200kr-100*return100kr)//50)
+return20kr=int((change-500*return500kr-200*return200kr-100*return100kr-50*return50kr)//20)
+return10kr=int((change-500*return500kr-200*return200kr-100*return100kr-50*return50kr-20*return20kr)//10)
+return5kr=int((change-500*return500kr-200*return200kr-100*return100kr-50*return50kr-20*return20kr-10*return10kr)//5)
+return2kr=int((change-500*return500kr-200*return200kr-100*return100kr-50*return50kr-20*return20kr-10*return10kr-5*return5kr)//2)
+return1kr=int((change-500*return500kr-200*return200kr-100*return100kr-50*return50kr-20*return20kr-10*return10kr-5*return5kr-2*return2kr)//1)
+
+
+print("1000kr bills: ",return1000kr)
+print(" 500kr bills: ",return500kr)
+print(" 200kr bills: ",return200kr)
+print(" 100kr bills: ",return100kr)
+print("  50kr bills: ",return50kr)
+print("  20kr bills: ",return20kr)
+print("  10kr coins: ",return10kr)
+print("   5kr coins: ",return5kr)
+print("   2kr coins: ",return2kr)
+print("   1kr coins: ",return1kr)
+
